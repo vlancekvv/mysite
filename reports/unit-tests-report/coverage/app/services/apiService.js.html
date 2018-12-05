@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for app/services/apiService.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../index.html">All files</a> / <a href="index.html">app/services</a> apiService.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">15.63% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>5/32</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/8</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">23.08% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>3/13</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">16.67% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>5/30</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import base64 from "base-64";
+import config from "../utils/config";
+import axios from 'axios';
+import { NetInfo } from 'react-native';
+import global from "../shared/global";
+&nbsp;
+const CancelToken = axios.CancelToken;
+&nbsp;
+export default class ApiService {
+&nbsp;
+<span class="fstat-no" title="function not covered" >  st</span>atic getHandler(cancelRequestCallback) {
+<span class="cstat-no" title="statement not covered" >    return <span class="fstat-no" title="function not covered" >(c</span>onnection) =&gt; <span class="cstat-no" title="statement not covered" >connection.type === 'none' &amp;&amp; cancelRequestCallback();</span></span>
+  };
+&nbsp;
+<span class="fstat-no" title="function not covered" >  st</span>atic getOrders(auth) {
+    const source = <span class="cstat-no" title="statement not covered" >CancelToken.source();</span>
+    const handler = <span class="cstat-no" title="statement not covered" >this.getHandler(<span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >source.cancel())</span>;</span>
+<span class="cstat-no" title="statement not covered" >    NetInfo.addEventListener('connectionChange', handler);</span>
+<span class="cstat-no" title="statement not covered" >    return axios({</span>
+      method: 'GET',
+      url: `${config[`${global.useLiveServer}_API_BASE`]}/webservice/app/v3/service/inspections/orders?otherStatuses=true`,
+      headers: {
+        'Content-Type': 'multipart/form-data',
+        "Authorization": `Basic ${base64.encode(`${auth.mail}:${auth.password}`)}`
+      },
+      cancelToken: source.token,
+      timeout: 60000
+    }).then(<span class="fstat-no" title="function not covered" >(r</span>esp) =&gt; {
+<span class="cstat-no" title="statement not covered" >      NetInfo.removeEventListener('connectionChange', handler);</span>
+<span class="cstat-no" title="statement not covered" >      return resp.data.orders || []</span>
+    });
+  }
+&nbsp;
+  static getUpdatedOrders(auth, updatedSince) {
+    return axios({
+      method: 'GET',
+      url: `${config[`${global.useLiveServer}_API_BASE`]}/webservice/app/v3/service/inspections/orders?otherStatuses=true&amp;updatedSince=${updatedSince}`,
+      headers: {
+        'Content-Type': 'multipart/form-data',
+        "Authorization": `Basic ${base64.encode(`${auth.mail}:${auth.password}`)}`
+      },
+      timeout: 180000
+    }).then(<span class="fstat-no" title="function not covered" >(r</span>esp) =&gt; <span class="cstat-no" title="statement not covered" >resp.data.orders || [])</span>;
+  }
+&nbsp;
+  static saveOrder(auth, orderId, data, onProgress) {
+    return new Promise((resolve, reject) =&gt; {
+      const url = `${config[`${global.useLiveServer}_API_BASE`]}/webservice/app/v3/service/inspections/values/${orderId}?closing=false&amp;content=photos&amp;validate=true`;
+      const xhr = new XMLHttpRequest();
+      const handler = <span class="cstat-no" title="statement not covered" >ApiService.getHandler(<span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >        xhr.abort();</span>
+<span class="cstat-no" title="statement not covered" >        reject(new Error('Kein Netzwerk'));</span>
+      });
+<span class="cstat-no" title="statement not covered" >      NetInfo.addEventListener('connectionChange', handler);</span>
+<span class="cstat-no" title="statement not covered" >      xhr.open('PUT', url, true);</span>
+<span class="cstat-no" title="statement not covered" >      xhr.setRequestHeader('Content-Type', 'multipart/form-data');</span>
+<span class="cstat-no" title="statement not covered" >      xhr.setRequestHeader('Authorization', `Basic ${base64.encode(`${auth.mail}:${auth.password}`)}`);</span>
+<span class="cstat-no" title="statement not covered" >      if (xhr.upload) {</span>
+<span class="cstat-no" title="statement not covered" >        xhr.upload.onprogress = onProgress;</span>
+      }
+<span class="cstat-no" title="statement not covered" >      xhr.onerror = <span class="fstat-no" title="function not covered" >(e</span>rror) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >        NetInfo.removeEventListener('connectionChange', handler);</span>
+<span class="cstat-no" title="statement not covered" >        reject({</span>
+          ...error,
+          code: xhr.status
+        })
+      };
+<span class="cstat-no" title="statement not covered" >      xhr.onload = <span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >        NetInfo.removeEventListener('connectionChange', handler);</span>
+<span class="cstat-no" title="statement not covered" >        resolve();</span>
+      };
+<span class="cstat-no" title="statement not covered" >      xhr.send(JSON.stringify({values: data}));</span>
+    });
+  }
+&nbsp;
+<span class="fstat-no" title="function not covered" >  st</span>atic login(userName, userPassword) {
+<span class="cstat-no" title="statement not covered" >    return axios({</span>
+      method: 'GET',
+      url: `${config[`${global.useLiveServer}_API_BASE`]}/webservice/app/v3/service/inspections/login`,
+      headers: {
+        'Content-Type': 'multipart/form-data',
+        "Authorization": `Basic ${base64.encode(`${userName}:${userPassword}`)}`
+      }
+    });
+  }
+}
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Wed Dec 05 2018 08:40:31 GMT+0200 (Eastern European Standard Time)
+</div>
+</div>
+<script src="../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../sorter.js"></script>
+</body>
+</html>

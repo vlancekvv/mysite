@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for app/views/questionnaire/InspectionQuestionnaire.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../prettify.css" />
+    <link rel="stylesheet" href="../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../index.html">All files</a> / <a href="index.html">app/views/questionnaire</a> InspectionQuestionnaire.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">66.67% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>10/15</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">42.86% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>3/7</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">80% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>4/5</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">66.67% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>10/15</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line medium'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React, { Component } from 'react';
+import { ScrollView, StyleSheet, View } from 'react-native';
+import { connect } from 'react-redux';
+&nbsp;
+import InspectionFieldBoolean from './inspection-fields/InspectionFieldBoolean';
+import InspectionFieldText from './inspection-fields/InspectionFieldText';
+import InspectionFieldDate from './inspection-fields/InspectionFieldDate';
+import InspectionFieldChoiceSingle from './inspection-fields/InspectionFieldChoiceSingle';
+import InspectionFieldChoiceMultiple from './inspection-fields/InspectionFieldChoiceMultiple';
+import HelpButtons from './HelpButtons';
+&nbsp;
+/**
+ * Inspection questionnaire screen component
+ */
+export class InspectionQuestionnaire extends Component {
+&nbsp;
+  constructor(props) {
+    super(props);
+    this.renderField = this.renderField.bind(this);
+  }
+&nbsp;
+  /**
+   * Schedules a field component should be returned
+   * @returns Special field component by type
+   */
+  getFieldComponent(field) {
+    switch (field.fieldType) {
+      case 'Nummer': return &lt;InspectionFieldText isNumber={true} field={field} /&gt;;
+      case 'Text': return &lt;InspectionFieldText field={field} /&gt;;
+<span class="branch-2 cbranch-no" title="branch not covered" >      case 'Text Multiline': <span class="cstat-no" title="statement not covered" >return &lt;InspectionFieldText field={field} /&gt;;</span></span>
+<span class="branch-3 cbranch-no" title="branch not covered" >      case 'Datum': <span class="cstat-no" title="statement not covered" >return &lt;InspectionFieldDate field={field} /&gt;;</span></span>
+      case 'Ja/Nein': return &lt;InspectionFieldBoolean field={field} /&gt;;
+<span class="branch-5 cbranch-no" title="branch not covered" >      case 'Einfachauswahl': <span class="cstat-no" title="statement not covered" >return &lt;InspectionFieldChoiceSingle field={field} /&gt;;</span></span>
+<span class="branch-6 cbranch-no" title="branch not covered" >      case 'Mehrfachauswahl': <span class="cstat-no" title="statement not covered" >return &lt;InspectionFieldChoiceMultiple field={field} /&gt;;</span></span>
+    }
+  };
+&nbsp;
+  /**
+   * Schedules a field component should be rendered
+   */
+  renderField(field, key) {
+    return &lt;View key={key}&gt;{this.getFieldComponent(field)}&lt;/View&gt;;
+  }
+&nbsp;
+  /**
+   * Schedules a inspection questionnaire screen should be rendered
+   */
+  render() {
+    return (
+      &lt;View style={styles.fieldsContainer}&gt;
+        &lt;ScrollView style={styles.fieldsContainer} contentInset={{bottom: 300}}&gt;
+          {
+            this.props.fields.map(this.renderField)
+          }
+        &lt;/ScrollView&gt;
+        &lt;HelpButtons /&gt;
+      &lt;/View&gt;
+    )
+  }
+}
+&nbsp;
+const styles = StyleSheet.create({
+  fieldsContainer: {
+    flex: 1
+  }
+});
+&nbsp;
+const mapStateToProps = <span class="fstat-no" title="function not covered" >st</span>ate =&gt; {
+<span class="cstat-no" title="statement not covered" >  return {</span>
+    fields: state.questionnaire.fields
+  };
+};
+&nbsp;
+export default connect(mapStateToProps)(InspectionQuestionnaire);
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Wed Dec 05 2018 08:40:31 GMT+0200 (Eastern European Standard Time)
+</div>
+</div>
+<script src="../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../sorter.js"></script>
+</body>
+</html>

@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for app/views/BlurView.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../index.html">All files</a> / <a href="index.html">app/views</a> BlurView.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>0/17</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/0</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/1</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>0/16</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54</td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js"><span class="cstat-no" title="statement not covered" >import React, {Component} from 'react';</span>
+<span class="cstat-no" title="statement not covered" >import { View, BackHandler } from 'react-native';</span>
+<span class="cstat-no" title="statement not covered" >import {connect} from 'react-redux'</span>
+<span class="cstat-no" title="statement not covered" >import _ from 'lodash'</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >import BlurEditor from '../../packages/photo-module/components/BlurEditor'</span>
+&nbsp;
+class BlurView extends Component {
+&nbsp;
+  componentDidMount = () =&gt; {
+<span class="cstat-no" title="statement not covered" >    BackHandler.addEventListener('hardwareBackPress', this.handleBackPress);</span>
+  };
+&nbsp;
+  componentWillUnmount() {
+<span class="cstat-no" title="statement not covered" >    BackHandler.removeEventListener('hardwareBackPress', this.handleBackPress);</span>
+  }
+&nbsp;
+  handleBackPress = () =&gt; {
+<span class="cstat-no" title="statement not covered" >    this.props.navigation.navigate('CategoryView', {title: this.props.orderName, id: this.props.currentOrder});</span>
+<span class="cstat-no" title="statement not covered" >    return true;</span>
+  };
+&nbsp;
+  saveAndGoBack = (payload) =&gt; {
+<span class="cstat-no" title="statement not covered" >    payload.img.original = `data:image/png;base64,${payload.img.original}`;</span>
+<span class="cstat-no" title="statement not covered" >    this.props.navigation.navigate(</span>
+      'PostCaptureView',
+      {
+        payload,
+        oldPayload: this.props.navigation.state.params.payload,
+        title: this.props.orderName
+      })
+  };
+&nbsp;
+  render = () =&gt; <span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >{</span></span>
+    const { rotate90deg } = { ...this.props.navigation.state.params };
+    const data = <span class="cstat-no" title="statement not covered" >_.cloneDeep(this.props.navigation.state.params.payload);</span>
+<span class="cstat-no" title="statement not covered" >    return (</span>
+        &lt;View style={{top: 0, bottom: 0, left: 0, right: 0, position: 'absolute'}}&gt;
+            &lt;BlurEditor data = { data } rotate90deg = { rotate90deg } save = {this.saveAndGoBack}/&gt;
+        &lt;/View&gt;
+    );
+  }
+&nbsp;
+}
+&nbsp;
+const <span class="fstat-no" title="function not covered" >mapStateToProps = <span class="cstat-no" title="statement not covered" >s</span>tate =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >  return {</span>
+    orderName: state.App.currentOrderName,
+    currentOrder: state.App.currentOrder
+  }
+};
+&nbsp;
+export default connect(mapStateToProps)(BlurView)
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Wed Dec 05 2018 08:40:31 GMT+0200 (Eastern European Standard Time)
+</div>
+</div>
+<script src="../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../sorter.js"></script>
+</body>
+</html>

@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for app/views/questionnaire/inspection-fields/InspectionFieldText.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../../index.html">All files</a> / <a href="index.html">app/views/questionnaire/inspection-fields</a> InspectionFieldText.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">38.46% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>5/13</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">60% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>12/20</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">25% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>1/4</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">38.46% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>5/13</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React from 'react';
+import PropTypes from 'prop-types';
+import { TextInput, StyleSheet, View } from 'react-native';
+&nbsp;
+import { getInspectionField } from '../InspectionField';
+&nbsp;
+/**
+ * Inspection field text component
+ */
+export class InspectionFieldText extends React.PureComponent {
+&nbsp;
+  /**
+   * Should toggle focus and help buttons if props have been updated
+   */
+<span class="fstat-no" title="function not covered" >  co</span>mponentDidUpdate(prevProps) {
+<span class="cstat-no" title="statement not covered" >     if (!prevProps.isEditing &amp;&amp; this.props.isEditing){</span>
+<span class="cstat-no" title="statement not covered" >       this.input.focus();</span>
+<span class="cstat-no" title="statement not covered" >       this.props.toggleButtons()</span>
+     } else <span class="cstat-no" title="statement not covered" >if (prevProps.isEditing &amp;&amp; !this.props.isEditing) {</span>
+<span class="cstat-no" title="statement not covered" >       this.props.toggleButtons();</span>
+<span class="cstat-no" title="statement not covered" >       this.input.blur();</span>
+     }
+  }
+&nbsp;
+  /**
+   * Schedules a inspection field text should be rendered
+   */
+  render() {
+    const { isMultiLine, value, confirmHandler, startHandler, editingHandler, ...props } = this.props;
+    return (
+      &lt;View style={{...styles.inputContainer, width: isMultiLine ? '95%' : '100%', alignItems: isMultiLine ? 'flex-start' : 'center'}}&gt;
+        {props.renderDefaultValue()}
+        &lt;TextInput
+          ref={<span class="fstat-no" title="function not covered" >in</span>put =&gt; <span class="cstat-no" title="statement not covered" >this.input = input}</span>
+          style={{...styles.input, minHeight: isMultiLine ? 60 : 0, textAlign: isMultiLine ? 'left' : 'center'}}
+          keyboardType={props.isNumber ? 'number-pad' : 'default'}
+          placeholder="Bittle eingeben"
+          placeholderTextColor={"#c7c7c7"}
+          multiline={isMultiLine}
+          maxLength={480}
+          value={value || ''}
+          onBlur={confirmHandler}
+          onFocus={startHandler}
+          onChangeText={<span class="fstat-no" title="function not covered" >(t</span>ext) =&gt; <span class="cstat-no" title="statement not covered" >editingHandler(text)}</span>
+        /&gt;
+      &lt;/View&gt;
+    );
+  }
+}
+&nbsp;
+InspectionFieldText.propTypes = {
+  value: PropTypes.string,
+  editingHandler: PropTypes.func,
+  confirmHandler: PropTypes.func,
+  startHandler: PropTypes.func,
+  renderDefaultValue: PropTypes.func,
+  isNumber: PropTypes.bool,
+  isMultiLine: PropTypes.bool
+};
+&nbsp;
+InspectionFieldText.defaultProps = {
+  isNumber: false,
+  isMultiLine: false
+};
+&nbsp;
+const styles = StyleSheet.create({
+  inputContainer: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    flexDirection: 'column',
+    borderWidth: 0.25,
+    paddingHorizontal: 10
+  },
+  input: {
+    fontSize: 18,
+    width: '100%',
+    margin: 'auto'
+  }
+});
+&nbsp;
+export default getInspectionField(InspectionFieldText);
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Wed Dec 05 2018 08:40:31 GMT+0200 (Eastern European Standard Time)
+</div>
+</div>
+<script src="../../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../../sorter.js"></script>
+</body>
+</html>

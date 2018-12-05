@@ -1,0 +1,1178 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for app/views/category/PhotoConfiguration.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../prettify.css" />
+    <link rel="stylesheet" href="../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../index.html">All files</a> / <a href="index.html">app/views/category</a> PhotoConfiguration.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>0/94</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/35</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/46</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>0/91</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218
+219
+220
+221
+222
+223
+224
+225
+226
+227
+228
+229
+230
+231
+232
+233
+234
+235
+236
+237
+238
+239
+240
+241
+242
+243
+244
+245
+246
+247
+248
+249
+250
+251
+252
+253
+254
+255
+256
+257
+258
+259
+260
+261
+262
+263
+264
+265
+266
+267
+268
+269
+270
+271
+272
+273
+274
+275
+276
+277
+278
+279
+280
+281
+282
+283
+284
+285
+286
+287
+288
+289
+290
+291
+292
+293
+294
+295
+296
+297
+298
+299
+300
+301
+302
+303
+304
+305
+306
+307
+308
+309
+310
+311
+312
+313
+314
+315
+316
+317
+318
+319
+320
+321
+322
+323
+324
+325
+326
+327
+328
+329
+330
+331
+332
+333
+334
+335
+336
+337
+338
+339
+340
+341
+342
+343
+344
+345
+346
+347
+348
+349
+350
+351
+352
+353
+354
+355
+356
+357
+358
+359
+360
+361
+362
+363
+364
+365
+366
+367
+368
+369
+370
+371
+372</td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js"><span class="cstat-no" title="statement not covered" >import React, { Component } from 'react'</span>
+<span class="cstat-no" title="statement not covered" >import { View, StyleSheet, Dimensions, Text, TouchableOpacity, TextInput, ScrollView, Alert } from 'react-native'</span>
+<span class="cstat-no" title="statement not covered" >import StorageService from '../../services/StorageService'</span>
+<span class="cstat-no" title="statement not covered" >import { connect } from 'react-redux'</span>
+<span class="cstat-no" title="statement not covered" >import {</span>
+  changeCurrentPhoto,
+  setCategoryKey,
+  setCurrentPhoto,
+  setNeededCategory,
+  toggleAssignPhotoModal,
+  toggleDescription,
+} from '../../actions'
+<span class="cstat-no" title="statement not covered" >import { ActionSheetCustom as ActionSheet } from 'react-native-actionsheet'</span>
+<span class="cstat-no" title="statement not covered" >import Modal from "react-native-modal"</span>
+<span class="cstat-no" title="statement not covered" >import InspectionModels from "../../shared/InspectionModels";</span>
+&nbsp;
+class PhotoConfiguration extends Component {
+&nbsp;
+<span class="fstat-no" title="function not covered" >  constructor(</span>props)<span class="cstat-no" title="statement not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >    super(props);</span>
+<span class="cstat-no" title="statement not covered" >    this.state = {</span>
+      active: false,
+      modal:false,
+      isModalVisible: false,
+      isDescriptionModalVisible: false,
+      isSlotModal: false,
+      reload: false,
+      rectangle: false,
+      category: InspectionModels[this.props.modelName].attributes.filter(<span class="fstat-no" title="function not covered" >attr<span class="cstat-no" title="statement not covered" > =&gt; attr.fieldType === 'CONTAINER_PHOTOS')</span></span>
+        .map(<span class="fstat-no" title="function not covered" >attr<span class="cstat-no" title="statement not covered" > =&gt; attr.name),</span></span>
+      description: [],
+      renderActionCategory: false,
+      descrLegth: '',
+      currentDescription: '',
+      isReorder: false,
+      isAssignMode: true
+    }
+  }
+&nbsp;
+  componentDidUpdate(prevProps) <span class="cstat-no" title="statement not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >    if (this.props.itemPhoto !== prevProps.itemPhoto) {</span>
+<span class="cstat-no" title="statement not covered" >      this.props.attributes.map(<span class="fstat-no" title="function not covered" >attr =&gt; {</span></span>
+<span class="cstat-no" title="statement not covered" >        if (this.props.itemPhoto.category === attr.name) {</span>
+<span class="cstat-no" title="statement not covered" >          this.setState({</span>
+            description: attr.properties.choices,
+            descrLegth: attr.properties.choices.length,
+            currentDescription: this.props.itemPhoto.description
+          });
+        }
+      })
+    }
+  }
+&nbsp;
+  _renderSlotModal = <span class="fstat-no" title="function not covered" >() =&gt; <span class="cstat-no" title="statement not covered" ></span>{</span>
+    const {minPhotos, maxPhotos} = <span class="cstat-no" title="statement not covered" >this.props.attributes.find(<span class="fstat-no" title="function not covered" >attr<span class="cstat-no" title="statement not covered" > =&gt; attr.name === this.props.neededCategory).properties;</span></span></span>
+    const optPhotos = <span class="cstat-no" title="statement not covered" >this.props.photos.filter(<span class="fstat-no" title="function not covered" >photo<span class="cstat-no" title="statement not covered" > =&gt; photo.category === this.props.neededCategory &amp;&amp; photo.category_key === 'opt');</span></span></span>
+<span class="cstat-no" title="statement not covered" >    return (</span>
+      &lt;Modal animationInTiming={10} ref="myRef" isVisible={this.state.isSlotModal &amp;&amp; this.props.isShowAssignPhotoModal}&gt;
+        &lt;View style={styles.modalContentSlot}&gt;
+          {minPhotos ? &lt;ScrollView style={styles.modalSlot}&gt;
+            {this.props.renderSlot(this.state.isReorder)}
+          &lt;/ScrollView&gt; : null}
+          {maxPhotos - minPhotos &gt; optPhotos.length ?
+            &lt;TouchableOpacity style={styles.modalClick}
+                              onPress={<span class="fstat-no" title="function not covered" >() =&gt; </span>{
+<span class="cstat-no" title="statement not covered" >                                this.setState({isSlotModal: false});</span>
+<span class="cstat-no" title="statement not covered" >                                !this.state.isReorder ?</span>
+                                  this.props.setCategoryKey('opt') :
+                                  this.props.assignPhotoToCategory(this.props.itemPhoto.description, this.props.itemPhoto, 'opt')
+                              }}&gt;
+              &lt;Text style={styles.modalText}&gt;Als optionales Foto verwenden&lt;/Text&gt;
+            &lt;/TouchableOpacity&gt; : null}
+          &lt;TouchableOpacity style={styles.cancelModalClick}
+                            onPress={<span class="fstat-no" title="function not covered" >() =&gt; </span>{
+<span class="cstat-no" title="statement not covered" >                              this.setState({isSlotModal: false});</span>
+<span class="cstat-no" title="statement not covered" >                              this.props.toggleAssignPhotoModal();</span>
+                            }}&gt;
+            &lt;Text style={styles.modalText}&gt;Abbrechen&lt;/Text&gt;
+          &lt;/TouchableOpacity&gt;
+        &lt;/View&gt;
+      &lt;/Modal&gt;
+    )
+  };
+&nbsp;
+&nbsp;
+  renderPreDescription = <span class="fstat-no" title="function not covered" >() =&gt; </span>{
+<span class="cstat-no" title="statement not covered" >    return(</span>
+      &lt;Modal animationInTiming={10}
+             ref="myRef"
+             isVisible={this.state.isModalVisible}
+             style={{justifyContent:'center'}}&gt;
+        &lt;View style={styles.modalContent}&gt;
+          &lt;Text style={{textAlign:'center',fontSize:25, paddingVertical:10}}&gt;Bildbetitelung bearbeiten&lt;/Text&gt;
+          &lt;Text style={{textAlign:'center',fontSize:17, paddingVertical:10}}&gt;
+            Sie können den Textbaustein bearbeiten oder einen anderen auswählen.
+          &lt;/Text&gt;
+          &lt;TextInput style={styles.modalInput}
+                     underlineColorAndroid = "transparent"
+                     placeholderTextColor = "#9a73ef"
+                     multiline
+                     autoCapitalize = "none"
+                     value = {this.state.currentDescription}
+                     onChangeText = {this.handleText}/&gt;
+          &lt;TouchableOpacity
+            style={styles.modalClick}
+            onPress={this.assignNewDescription}&gt;
+            &lt;Text style={styles.modalText}&gt;Bestätigen&lt;/Text&gt;
+          &lt;/TouchableOpacity&gt;
+          &lt;TouchableOpacity style={styles.modalClick}
+                            onPress={<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >() =&gt; this.setState({isDescriptionModalVisible: true, isModalVisible: false})}&gt;</span></span>
+            &lt;Text style={styles.modalText}&gt;Anderer Textbaustein&lt;/Text&gt;
+          &lt;/TouchableOpacity&gt;
+          &lt;TouchableOpacity style={styles.modalClick}
+                            onPress={<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >() =&gt; this.setState({isModalVisible: false})}&gt;</span></span>
+            &lt;Text style={styles.modalText}&gt;Abbrechen&lt;/Text&gt;
+          &lt;/TouchableOpacity&gt;
+        &lt;/View&gt;
+      &lt;/Modal&gt;
+    )
+  };
+&nbsp;
+  renderDescriptionSelect = <span class="fstat-no" title="function not covered" >() =&gt; </span>{
+<span class="cstat-no" title="statement not covered" >    return (</span>
+      &lt;Modal isVisible={this.state.isDescriptionModalVisible || this.props.isShowDescriptionModal} style={{justifyContent:'center'}}&gt;
+        &lt;View style={styles.modalContentDescription}&gt;
+          &lt;ScrollView style={{width: '100%', marginTop: 10}} contentInset={{top: 10}}&gt;
+            {
+              this.props.attributes.find(<span class="fstat-no" title="function not covered" >attr<span class="cstat-no" title="statement not covered" > =&gt; attr.name === this.props.neededCategory).properties.choices</span></span>
+                .map(<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(</span>name, key) =&gt;</span>
+                  &lt;TouchableOpacity key={key}
+                                    style={{...styles.modalClick, backgroundColor: '#f4f4f4', borderBottomColor: '#c3c3c3'}}
+                                    onPress={<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >() =&gt; this.selectDescription(name)}&gt;</span></span>
+                    &lt;Text style={{...styles.modalText, color: 'black', fontSize: 16}}&gt;{name}&lt;/Text&gt;
+                  &lt;/TouchableOpacity&gt;
+                )
+            }
+          &lt;/ScrollView&gt;
+            &lt;TouchableOpacity style={{...styles.cancelModalClick, borderTopColor: '#bdbdbd', borderTopWidth: 0.5}}
+                              onPress={<span class="fstat-no" title="function not covered" >() =&gt; </span>{
+<span class="cstat-no" title="statement not covered" >                                this.props.toggleDescription(false);</span>
+<span class="cstat-no" title="statement not covered" >                                this.setState({isDescriptionModalVisible: false, isModalVisible: !this.state.isAssignMode})</span>
+                              }}&gt;
+              &lt;Text style={styles.modalText}&gt;Abbrechen&lt;/Text&gt;
+            &lt;/TouchableOpacity&gt;
+        &lt;/View&gt;
+      &lt;/Modal&gt;
+    );
+  };
+&nbsp;
+  toPostCapture = <span class="fstat-no" title="function not covered" >(</span>r) =&gt; {
+<span class="cstat-no" title="statement not covered" >    this.props.changeCurrentPhoto(r.id);</span>
+<span class="cstat-no" title="statement not covered" >    StorageService.getOriginal(r.id).then(<span class="fstat-no" title="function not covered" >(</span>original) =&gt; {</span>
+      const payload<span class="cstat-no" title="statement not covered" > = { ...r };</span>
+<span class="cstat-no" title="statement not covered" >      payload.img = { ...payload.img, original };</span>
+<span class="cstat-no" title="statement not covered" >      this.props.navigate.navigate('PostCaptureView', {</span>
+        payload,
+        title: this.props.orderName,
+        id: this.props.order,
+        databaseId: r.id,
+        isAddedPhoto: true
+      })
+    })
+      .catch(<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >() =&gt; Alert.alert('Cannot get photo from storage'))</span></span>
+  };
+&nbsp;
+  assignNewDescription = <span class="fstat-no" title="function not covered" >() =&gt; </span>{
+<span class="cstat-no" title="statement not covered" >    if (this.state.currentDescription.length) {</span>
+<span class="cstat-no" title="statement not covered" >      this.props.handleAssignDescription(this.props.itemPhoto, this.state.currentDescription);</span>
+<span class="cstat-no" title="statement not covered" >      this.setState({isModalVisible: false, currentDescription: ''})</span>
+    } else {
+<span class="cstat-no" title="statement not covered" >      Alert.alert('Bildbetitelung darf nicht leer sein');</span>
+    }
+  };
+&nbsp;
+  selectDescription = <span class="fstat-no" title="function not covered" >(</span>name) =&gt; {
+<span class="cstat-no" title="statement not covered" >    if (this.state.isAssignMode) {</span>
+<span class="cstat-no" title="statement not covered" >      this.props.assignPhotoToCategory(name, this.props.itemPhoto);</span>
+<span class="cstat-no" title="statement not covered" >      this.setState({currentDescription: '', isDescriptionModalVisible: false})</span>
+    } else {
+<span class="cstat-no" title="statement not covered" >      this.setState({currentDescription: name, isDescriptionModalVisible: false, isModalVisible: true});</span>
+    }
+<span class="cstat-no" title="statement not covered" >    this.props.toggleDescription(false);</span>
+  };
+&nbsp;
+  assignCategory = <span class="fstat-no" title="function not covered" >(</span>key) =&gt; {
+    const neededAttribute = <span class="cstat-no" title="statement not covered" >this.props.attributes[key];</span>
+<span class="cstat-no" title="statement not covered" >    if (neededAttribute) {</span>
+<span class="cstat-no" title="statement not covered" >      this.props.setNeededCategory(neededAttribute.name, this.props.itemPhoto);</span>
+<span class="cstat-no" title="statement not covered" >      this.props.toggleAssignPhotoModal();</span>
+<span class="cstat-no" title="statement not covered" >      this.setState({isSlotModal: true});</span>
+    }
+  };
+&nbsp;
+  handleReload = <span class="fstat-no" title="function not covered" >() =&gt; </span>{
+<span class="cstat-no" title="statement not covered" >    this.setState({reload: !this.state.reload})</span>
+  };
+&nbsp;
+  handleText = <span class="fstat-no" title="function not covered" >(</span>text) =&gt; {
+<span class="cstat-no" title="statement not covered" >    this.setState({ currentDescription: text})</span>
+  };
+&nbsp;
+  reorderPhoto = <span class="fstat-no" title="function not covered" >() =&gt; </span>{
+<span class="cstat-no" title="statement not covered" >    this.props.toggleModal();</span>
+<span class="cstat-no" title="statement not covered" >    this.setState({isReorder: true});</span>
+<span class="cstat-no" title="statement not covered" >    setTimeout(<span class="fstat-no" title="function not covered" >() =&gt; </span>{</span>
+<span class="cstat-no" title="statement not covered" >      this.setState({isSlotModal: true});</span>
+<span class="cstat-no" title="statement not covered" >      this.props.toggleAssignPhotoModal();</span>
+    }, 40)
+  };
+&nbsp;
+  render() <span class="cstat-no" title="statement not covered" >{</span>
+    const category = <span class="cstat-no" title="statement not covered" >this.props.itemPhoto.category;</span>
+<span class="cstat-no" title="statement not covered" >    return (</span>
+      &lt;View&gt;
+        &lt;ActionSheet ref={<span class="fstat-no" title="function not covered" >o<span class="cstat-no" title="statement not covered" > =&gt; this.ActionSheet = o}</span></span>
+                     title={'Kategorie'}
+                     options={[...this.state.category, 'Abbrechen']}
+                     cancelButtonIndex={this.state.category.length}
+                     onPress={<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(</span>index) =&gt; this.assignCategory(index)}</span>
+        /&gt;
+        {(this.state.isDescriptionModalVisible || this.props.isShowDescriptionModal) &amp;&amp; this.renderDescriptionSelect()}
+        {this.state.isModalVisible &amp;&amp; this.renderPreDescription()}
+        {this.props.isShowAssignPhotoModal &amp;&amp; this._renderSlotModal()}
+        &lt;Modal animationOutTiming={10} key={0} isVisible={this.props.showModal} style={{justifyContent: 'flex-end'}}&gt;
+          &lt;View style={styles.modalContent}&gt;
+            &lt;TouchableOpacity style={styles.modalClick}
+                              onPress={<span class="fstat-no" title="function not covered" >() =&gt; </span>{
+<span class="cstat-no" title="statement not covered" >                                this.props.toggleModal();</span>
+<span class="cstat-no" title="statement not covered" >                                setTimeout(<span class="fstat-no" title="function not covered" >() =&gt; </span>{</span>
+<span class="cstat-no" title="statement not covered" >                                  this.ActionSheet.show();</span>
+<span class="cstat-no" title="statement not covered" >                                  this.setState({isAssignMode: true});</span>
+                                }, 40)
+                              }}&gt;
+              &lt;Text style={styles.modalText}&gt;Foto zuordnen&lt;/Text&gt;
+            &lt;/TouchableOpacity&gt;
+            { category ? &lt;TouchableOpacity style={styles.modalClick}
+                                           onPress={<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >() =&gt; this.reorderPhoto()}&gt;</span></span>
+              &lt;Text style={styles.modalText}&gt;Foto verschieben&lt;/Text&gt;
+            &lt;/TouchableOpacity&gt; : null }
+            { category ? &lt;TouchableOpacity style={styles.modalClick}
+                                           onPress={<span class="fstat-no" title="function not covered" >() =&gt; </span>{
+<span class="cstat-no" title="statement not covered" >                                             this.props.toggleModal();</span>
+<span class="cstat-no" title="statement not covered" >                                             setTimeout(<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >() =&gt; this.setState({isModalVisible: true, isAssignMode: false}),40);</span></span></span>
+                                           }}&gt;
+              &lt;Text style={styles.modalText}&gt;Bildbetitelung bearbeiten&lt;/Text&gt;
+            &lt;/TouchableOpacity&gt; : null }
+            { category ? &lt;TouchableOpacity style={styles.modalClick}
+                                           onPress={<span class="fstat-no" title="function not covered" >() =&gt; </span>{
+<span class="cstat-no" title="statement not covered" >                                             this.props.deAssignCategory(this.props.itemPhoto);</span>
+<span class="cstat-no" title="statement not covered" >                                             this.props.toggleModal();</span>
+                                           }}&gt;
+              &lt;Text style={styles.modalText}&gt;Fotozuor‌d‌nung trennen&lt;/Text&gt;
+            &lt;/TouchableOpacity&gt; : null }
+            &lt;TouchableOpacity style={styles.modalClick}
+                              onPress={<span class="fstat-no" title="function not covered" >() =&gt; </span>{
+<span class="cstat-no" title="statement not covered" >                                this.toPostCapture(this.props.itemPhoto);</span>
+<span class="cstat-no" title="statement not covered" >                                this.props.toggleModal();</span>
+                              }}&gt;
+              &lt;Text style={styles.modalText}&gt;Foto bearbeiten&lt;/Text&gt;
+            &lt;/TouchableOpacity&gt;
+            &lt;TouchableOpacity style={styles.modalClick}
+                              onPress={<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >() =&gt; this.props.deletePhoto(this.props.itemPhoto)}&gt;</span></span>
+              &lt;Text style={styles.deleteModalText}&gt;Foto löschen&lt;/Text&gt;
+            &lt;/TouchableOpacity&gt;
+            &lt;TouchableOpacity style={styles.cancelModalClick}
+                              onPress={<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >() =&gt; this.props.toggleModal()}&gt;</span></span>
+              &lt;Text style={styles.modalText}&gt;Abbrechen&lt;/Text&gt;
+            &lt;/TouchableOpacity&gt;
+          &lt;/View&gt;
+        &lt;/Modal&gt;
+      &lt;/View&gt;
+    )
+  }
+}
+&nbsp;
+const styles = <span class="cstat-no" title="statement not covered" >StyleSheet.create({</span>
+  modalContent: {
+    backgroundColor: "white",
+    justifyContent: "center",
+    alignItems: "center",
+    borderRadius: 10,
+    borderColor: "rgba(0, 0, 0, 0.1)"
+  },
+  modalSlot:{
+    marginTop: 20,
+    width:(Dimensions.get('window').width)/1.2,
+  },
+  modalContentSlot: {
+    height: "auto",
+    backgroundColor: "white",
+    justifyContent: "center",
+    alignItems: "center",
+    borderRadius: 10,
+    borderColor: "rgba(0, 0, 0, 0.1)"
+  },
+  modalContentDescription:{
+    flex: 0.7,
+    backgroundColor: "white",
+    justifyContent: "center",
+    alignItems: "center",
+    borderRadius: 10,
+    borderColor: "rgba(0, 0, 0, 0.1)"
+  },
+  modalInput : {
+    borderRadius: 4,
+    borderColor: '#b2b2b2',
+    minHeight: 40,
+    width: '95%',
+    borderStyle: 'solid',
+    borderWidth: 1,
+    paddingHorizontal: 10,
+    margin: 5,
+    fontSize:18,
+  },
+  modalText: {
+    fontSize: 18,
+    color: '#007AFF'
+  },
+  deleteModalText: {
+    fontSize: 18,
+    color: 'red'
+  },
+  modalClick: {
+    width: '100%',
+    height: 50,
+    justifyContent: "center",
+    alignItems: "center",
+    marginTop: 0.5,
+    zIndex: 10,
+    borderBottomColor: '#e2e2e2',
+    borderBottomWidth: 0.5
+  },
+  cancelModalClick: {
+    width: '100%',
+    height: 50,
+    justifyContent: "center",
+    alignItems: "center",
+    marginTop: 0.5,
+    zIndex: 10
+  }
+});
+&nbsp;
+const <span class="fstat-no" title="function not covered" >mapStateToProps = <span class="cstat-no" title="statement not covered" >s</span>tate =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >  return {</span>
+    reload: state.Home.reloadGallery,
+    total:state.Home.totalFile,
+    tablet: state.App.isTablet,
+    modelName: state.App.modelName,
+    orderName: state.App.currentOrderName,
+    order: state.App.currentOrder,
+    photos: state.App.dataPhotos,
+    neededCategory: state.App.neededCategory,
+    isShowAssignPhotoModal: state.App.isShowAssignPhotoModal,
+    itemPhoto: state.App.currentPhotoItem,
+    attributes: state.App.attributes,
+    isShowDescriptionModal: state.App.isShowDescriptionModal
+  }
+};
+&nbsp;
+const <span class="fstat-no" title="function not covered" >mapDispatchToProps = <span class="cstat-no" title="statement not covered" >d</span>ispatch =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >  return {</span>
+    changeCurrentPhoto: <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(</span>id) =&gt; dispatch(changeCurrentPhoto(id)),</span>
+    setCurrentPhoto: <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(</span>item) =&gt; dispatch(setCurrentPhoto(item)),</span>
+    setNeededCategory: <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(</span>name,item) =&gt; dispatch(setNeededCategory(name,item)),</span>
+    toggleAssignPhotoModal: <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >() =&gt; dispatch(toggleAssignPhotoModal()),</span></span>
+    toggleDescription: <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(</span>flag) =&gt; dispatch(toggleDescription(flag)),</span>
+    setCategoryKey: <span class="fstat-no" title="function not covered" >key<span class="cstat-no" title="statement not covered" > =&gt; dispatch(setCategoryKey(key))</span></span>
+  }
+};
+&nbsp;
+export default connect(mapStateToProps, mapDispatchToProps)(PhotoConfiguration)
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Wed Dec 05 2018 08:40:31 GMT+0200 (Eastern European Standard Time)
+</div>
+</div>
+<script src="../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../sorter.js"></script>
+</body>
+</html>
