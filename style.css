@@ -37,7 +37,7 @@ h1, a {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 20px;
+  border-radius: 10px;
   font-size: 22px;
   color: #494949;
   text-decoration: none;
