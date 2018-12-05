@@ -1,0 +1,163 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Deleting Orders",
+    "line": 2,
+    "id": "deleting-orders",
+    "tags": [
+      {
+        "name": "@deleting-orders",
+        "line": 1
+      }
+    ],
+    "uri": "features/deletingOrders.feature",
+    "elements": [
+      {
+        "id": "deleting-orders;don't-display-orders-with-status-deleted",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Don't display orders with status DELETED",
+        "tags": [
+          {
+            "name": "@deleting-orders",
+            "line": 1
+          },
+          {
+            "name": "@delete-orders-with-deleted-status",
+            "line": 4
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I log in as a test user.",
+            "match": {
+              "location": "features/step_definitions/general.steps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10179000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I should be on \"orders\" page",
+            "match": {
+              "location": "features/step_definitions/general.steps.js:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4936000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I should not see orders with status \"Reklamationsfrist vorbei\"",
+            "match": {
+              "location": "features/step_definitions/deletingOrders.steps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I should not see orders with status \"Storno\"",
+            "match": {
+              "location": "features/step_definitions/deletingOrders.steps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "I click \"open menu\" button",
+            "match": {
+              "location": "features/step_definitions/general.steps.js:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11666000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "I click \"open archive\" button",
+            "match": {
+              "location": "features/step_definitions/general.steps.js:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1451000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "I should be on \"archive\" page",
+            "match": {
+              "location": "features/step_definitions/general.steps.js:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4215000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "I should not see orders with status \"Reklamationsfrist vorbei\"",
+            "match": {
+              "location": "features/step_definitions/deletingOrders.steps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "I should not see orders with status \"Storno\"",
+            "match": {
+              "location": "features/step_definitions/deletingOrders.steps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "features/support/hooks.js:31"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
